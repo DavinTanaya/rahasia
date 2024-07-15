@@ -5,7 +5,7 @@ export default function App() {
       {/* CONTENT HOME PAGE VVVVV */}
       <div>homepage</div>
       <div>Cart page</div>
-      <div>LOGIN FEATURE</div>
+      <div>REGISTER FEATURE</div>
     </div>
   );
 }
