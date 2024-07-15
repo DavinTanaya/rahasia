@@ -3,7 +3,7 @@ export default function App() {
     <div>
       Hello World!
       {/* CONTENT HOME PAGE VVVVV */}
-      <div>Home page</div>
+      <div>homepage</div>
     </div>
   );
 }
