@@ -4,6 +4,7 @@ export default function App() {
       Hello World!
       {/* CONTENT HOME PAGE VVVVV */}
       <div>homepage</div>
+      <div>Cart page</div>
     </div>
   );
 }
