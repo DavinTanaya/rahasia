@@ -4,6 +4,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 /*
 .app-layout {
@@ -19,17 +20,7 @@ const router = createBrowserRouter([
     // "/" cmn buat URL di awal
     // "www.tjongklak.com/dashboard"
     path: "/dashboard",
-    element: (
-      <div className="grid grid-cols-[20rem_1fr] min-h-screen">
-        <div className="bg-brown flex flex-col">
-          <Link to={"/dashboard/events"}>Kelola Events</Link>
-          <Link to={"/dashboard/website"}>Website Tjongklak</Link>
-        </div>
-        <main className="bg-bg">
-          <Outlet />
-        </main>
-      </div>
-    ),
+    element: <Dashboard />,
     children: [
       {
         // Ini ga pake "/" gara2 nested
@@ -48,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <div>Login</div>,
+    element: <div>Home</div>,
   },
 ]);
 
