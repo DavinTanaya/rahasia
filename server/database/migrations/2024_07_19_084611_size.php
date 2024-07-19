@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
             $table->enum('size', ['xs', 's', 'm', 'l', 'xl', '2xl', '3xl', 'free size']);
-            $table->foreignId('category_id')->references('id')->on('categories')->cascadeOnDelete()->cascadeOnUpdate();;
             $table->foreignId('product_id')->references('id')->on('products')->cascadeOnDelete()->cascadeOnUpdate();
             $table->float('chest');
             $table->float('waist');
